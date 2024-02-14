@@ -11,7 +11,6 @@ const ApartmentScreen = ({ navigation, route }: any) => {
     useEffect(() => {
         getApartment(route.params.apartmentId)
         .then((res)=>{
-            console.log(res);
             setApartment(res.data);
         })
     },[])

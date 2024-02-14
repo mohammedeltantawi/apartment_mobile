@@ -14,7 +14,6 @@ const ListComponent = (
     const navigation = useNavigation();
 
     function goToApartment() {
-        console.log("navigation");
         navigation.navigate(ApartmentsStack.menuList?.ApartmentDetails.id, {apartmentId: apartment._id});
     }
 
